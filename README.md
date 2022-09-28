@@ -34,7 +34,7 @@ It will place the `nvim` executable in `~/.local/bin`, so ensure that
 
 ## Swapping color schemes
 # Installing a new color scheme
-Once you find a color scheme you like you can automatically install it (next time you open nvim) by editing `.config/nvim/init.vim and searching for the term "Coloring", you should see a bunch of lines that look like `Plug 'romainl/Apprentice'`
+Once you find a color scheme you like you can automatically install it (next time you open nvim) by editing `.config/nvim/init.vim` and searching for the term "Coloring", you should see a bunch of lines that look like `Plug 'romainl/Apprentice'`
 Once you are here you just need to find a color scheme you like by looking them up, but a good reference is here: https://vimcolorschemes.com/
 Once you find one you like, you take the git repo it points to and add it as a plugin
 For example
