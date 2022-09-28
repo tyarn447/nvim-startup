@@ -16,8 +16,13 @@ set nowrap
 set hlsearch
 set wildignore=*.o,*.obj,*.db-whl,*.db-shm,*node_modules*,*.venv*,tags,.*.un~,*.pyc
 set list listchars=tab:>\ ,trail:·
-set mouse=a
+set mouse=a "Allows Scrolling
+set mouse& "Allows mouse copy paste
 set showcmd
+
+"Enable folding of code
+set foldmethod=indent
+set foldlevel=99
 " }}}
 
 " Plugins {{{
@@ -43,6 +48,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tmhedberg/SimpylFold' "Folding code with za
 " Intellisense
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -60,6 +66,7 @@ Plug 'junegunn/fzf.vim'
 if !has('win32')
   Plug 'nvim-treesitter/nvim-treesitter'
 endif
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'romainl/Apprentice'
 Plug 'morhetz/gruvbox'
 Plug 'EdenEast/nightfox.nvim'
@@ -77,7 +84,8 @@ call plug#end()
 " colo apprentice
 " My favorite: nordfox
 " colo nordfox
-colo gruvbox
+"colo gruvbox "Robbs color
+colo dracula "Yarns Color
 " colo kanagawa
 " colo onedark
 " let g:airline_theme='base16_nord'
@@ -179,7 +187,6 @@ EOF
 lua << EOF
 require('nvim-lsp-installer').setup { automatic_installation = true }
 local lspconfig = require('lspconfig')
-
 local on_attach = function(client, bufnr)
   local opts = { noremap=true, silent=true }
   -- The bindings here override very similar ones in base vim, and isn't a spot
