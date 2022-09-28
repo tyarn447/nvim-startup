@@ -62,12 +62,12 @@ nnoremap <silent>cgn          :<C-u>let @/=expand('<cword>')<cr>cgn
 
 " [f]ind things
 " -----------------------------------------------------------------------
-" nnoremap <leader>ff         :Files<CR>
-" nnoremap <leader>fb         :Buffers<CR>
-" nnoremap <leader>fg         :GitFiles<CR>
-" nnoremap <leader>ft         :Tags<CR>
-" nnoremap <leader>fr         :Rg<CR>
-" nnoremap <leader>fa         :<C-u>e ~/.aws/credentials<CR>
+ nnoremap <leader>ff         :Files<CR>
+ nnoremap <leader>fb         :Buffers<CR>
+ nnoremap <leader>fg         :GitFiles<CR>
+ nnoremap <leader>ft         :Tags<CR>
+ nnoremap <leader>fr         :Rg<CR>
+ nnoremap <leader>fa         :<C-u>e ~/.aws/credentials<CR>
 
 " Language server bindings
 " -----------------------------------------------------------------------
