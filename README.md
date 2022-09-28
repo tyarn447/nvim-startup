@@ -1,11 +1,11 @@
-# vim-springboard
+# nvim-startup
 
 ## Setting up:
 
 ```sh
 cd $HOME
 git init
-git remote add origin https://github.com/tyarn/vim-springboard
+git remote add origin https://github.com/tyarn/nvim-startup
 git checkout main
 git pull
 ```
