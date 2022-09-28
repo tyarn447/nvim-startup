@@ -6,8 +6,7 @@
 cd $HOME
 git init
 git remote add origin https://github.com/tyarn/nvim-startup
-git checkout main
-git pull
+git pull origin main
 ```
 
 This will put all the files from this repo in your home directory. You are then
